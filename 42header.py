@@ -13,8 +13,8 @@ def main():
         filename = os.path.basename(file)
         with open(file, 'r') as f:
             s = f.read()
-            if s[:len(start)] == start:
-                continue
+        if s[:len(start)] == start:
+            continue
         with open(file, 'w') as f:
             f.write(f'''\
 /* ************************************************************************** */
